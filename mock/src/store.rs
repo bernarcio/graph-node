@@ -423,7 +423,7 @@ impl SubgraphDeploymentStore for MockStore {
         &self,
         _schema: &Schema,
     ) -> (HashMap<SchemaReference, Arc<Schema>>, Vec<Error>) {
-        unimplemented!()
+        (HashMap::new(), vec![])
     }
 }
 
