@@ -6,7 +6,7 @@ use std::collections::{BTreeMap, HashMap};
 use std::sync::Mutex;
 
 use graph::components::store::*;
-use graph::data::schema::SchemaReference;
+use graph::data::schema::{SchemaImportError, SchemaReference};
 use graph::data::subgraph::schema::*;
 use graph::prelude::*;
 use graph_graphql::prelude::api_schema;
@@ -415,14 +415,17 @@ impl SubgraphDeploymentStore for MockStore {
     fn resolve_schema_reference(
         &self,
         _schema_reference: &SchemaReference,
-    ) -> Result<Arc<Schema>, Error> {
+    ) -> Result<Arc<Schema>, SchemaImportError> {
         unimplemented!()
     }
 
     fn resolve_import_graph(
         &self,
         _schema: &Schema,
-    ) -> (HashMap<SchemaReference, Arc<Schema>>, Vec<Error>) {
+    ) -> (
+        HashMap<SchemaReference, Arc<Schema>>,
+        Vec<SchemaImportError>,
+    ) {
         (HashMap::new(), vec![])
     }
 }
