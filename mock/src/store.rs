@@ -6,6 +6,7 @@ use std::collections::{BTreeMap, HashMap};
 use std::sync::Mutex;
 
 use graph::components::store::*;
+use graph::data::schema::SchemaReference;
 use graph::data::subgraph::schema::*;
 use graph::prelude::*;
 use graph_graphql::prelude::api_schema;
@@ -409,6 +410,20 @@ impl SubgraphDeploymentStore for MockStore {
 
     fn uses_relational_schema(&self, _: &SubgraphDeploymentId) -> Result<bool, Error> {
         Ok(true)
+    }
+
+    fn resolve_schema_reference(
+        &self,
+        _schema_reference: &SchemaReference,
+    ) -> Result<Arc<Schema>, Error> {
+        unimplemented!()
+    }
+
+    fn resolve_import_graph(
+        &self,
+        _schema: &Schema,
+    ) -> (HashMap<SchemaReference, Arc<Schema>>, Vec<Error>) {
+        unimplemented!()
     }
 }
 
