@@ -15,7 +15,7 @@ reqwest = "0.9"
 # and we should try to implement on top of ethabi instead of inside it, and
 # tuple support which isn't upstreamed yet. For now, we shall deviate from
 # ethabi, but long term we want to find a way to drop our fork.
-ethabi = { git = "https://github.com/graphprotocol/ethabi.git", branch = "graph-patches" }
+ethabi = { git = "https://github.com/graphprotocol/ethabi.git", branch = "jannis/overloaded-functions" }
 hex = "0.4.0"
 futures = "0.1.21"
 graphql-parser = "0.2.3"

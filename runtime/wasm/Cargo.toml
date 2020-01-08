@@ -4,7 +4,7 @@ version = "0.17.0"
 edition = "2018"
 
 [dependencies]
-ethabi = { git = "https://github.com/graphprotocol/ethabi.git", branch = "graph-patches" }
+ethabi = { git = "https://github.com/graphprotocol/ethabi.git", branch = "jannis/overloaded-functions" }
 futures = "0.1.21"
 hex = "0.4.0"
 graph = { path = "../../graph" }

@@ -736,7 +736,7 @@ dependencies = [
 [[package]]
 name = "ethabi"
 version = "8.0.0"
-source = "git+https://github.com/graphprotocol/ethabi.git?branch=graph-patches#da9e2bf596da19c1739d390a5579c856b2d5e78c"
+source = "git+https://github.com/graphprotocol/ethabi.git?branch=jannis/overloaded-functions#558dfe2e1faec497c82f747603de74a25abc8293"
 dependencies = [
  "error-chain 0.12.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "ethereum-types 0.6.0 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -970,7 +970,7 @@ dependencies = [
  "bigdecimal 0.0.14 (registry+https://github.com/rust-lang/crates.io-index)",
  "chrono 0.4.10 (registry+https://github.com/rust-lang/crates.io-index)",
  "diesel 1.4.3 (registry+https://github.com/rust-lang/crates.io-index)",
- "ethabi 8.0.0 (git+https://github.com/graphprotocol/ethabi.git?branch=graph-patches)",
+ "ethabi 8.0.0 (git+https://github.com/graphprotocol/ethabi.git?branch=jannis/overloaded-functions)",
  "failure 0.1.6 (registry+https://github.com/rust-lang/crates.io-index)",
  "futures 0.1.28 (registry+https://github.com/rust-lang/crates.io-index)",
  "graphql-parser 0.2.3 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -1117,7 +1117,7 @@ name = "graph-runtime-wasm"
 version = "0.17.0"
 dependencies = [
  "bs58 0.3.0 (registry+https://github.com/rust-lang/crates.io-index)",
- "ethabi 8.0.0 (git+https://github.com/graphprotocol/ethabi.git?branch=graph-patches)",
+ "ethabi 8.0.0 (git+https://github.com/graphprotocol/ethabi.git?branch=jannis/overloaded-functions)",
  "futures 0.1.28 (registry+https://github.com/rust-lang/crates.io-index)",
  "graph 0.17.0",
  "graph-core 0.17.0",
@@ -3767,7 +3767,7 @@ dependencies = [
 "checksum env_logger 0.7.1 (registry+https://github.com/rust-lang/crates.io-index)" = "44533bbbb3bb3c1fa17d9f2e4e38bbbaf8396ba82193c4cb1b6445d711445d36"
 "checksum environment 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)" = "1f4b14e20978669064c33b4c1e0fb4083412e40fe56cbea2eae80fd7591503ee"
 "checksum error-chain 0.12.0 (registry+https://github.com/rust-lang/crates.io-index)" = "07e791d3be96241c77c43846b665ef1384606da2cd2a48730abe606a12906e02"
-"checksum ethabi 8.0.0 (git+https://github.com/graphprotocol/ethabi.git?branch=graph-patches)" = "<none>"
+"checksum ethabi 8.0.0 (git+https://github.com/graphprotocol/ethabi.git?branch=jannis/overloaded-functions)" = "<none>"
 "checksum ethabi 8.0.0 (registry+https://github.com/rust-lang/crates.io-index)" = "b312e5740d6e0369491ebe81a8752f7797b70e495530f28bbb7cc967ded3d77c"
 "checksum ethbloom 0.6.4 (registry+https://github.com/rust-lang/crates.io-index)" = "3932e82d64d347a045208924002930dc105a138995ccdc1479d0f05f0359f17c"
 "checksum ethereum-types 0.6.0 (registry+https://github.com/rust-lang/crates.io-index)" = "62d1bc682337e2c5ec98930853674dd2b4bd5d0d246933a9e98e5280f7c76c5f"
