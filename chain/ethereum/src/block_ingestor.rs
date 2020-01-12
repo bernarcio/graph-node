@@ -45,7 +45,6 @@ where
     chain_store: Arc<S>,
     eth_adapter: Arc<dyn EthereumAdapter>,
     ancestor_count: u64,
-    network_name: String,
     logger: Logger,
     polling_interval: Duration,
 }
@@ -71,13 +70,12 @@ where
             }),
         );
 
-        let logger = logger.new(o!("network_name" => network_name.clone()));
+        let logger = logger.new(o!("network_name" => network_name));
 
         Ok(BlockIngestor {
             chain_store,
             eth_adapter,
             ancestor_count,
-            network_name,
             logger,
             polling_interval,
         })
